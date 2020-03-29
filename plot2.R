@@ -22,7 +22,7 @@ baltimore.emissions.by.year <- df.list$emissions %>%
 png(filename='plot2.png', width=480, height=480, units='px')
 
 barplot(
-  (baltimore.emissions.by.year$emissions.by.year)/10^6,
+  (baltimore.emissions.by.year$emissions.by.year),
   names.arg = baltimore.emissions.by.year$year,
   xlab = "Year",
   ylab = "PM2.5 Emissions (tons)",
